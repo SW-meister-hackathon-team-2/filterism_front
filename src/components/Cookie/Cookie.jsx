@@ -18,7 +18,7 @@ export const removeCookie = (name)=>{
 }
 
 const Cookie = () => {
-  const [serchParams, setSearchParams] = useSearchParams();
+  const [serchParams] = useSearchParams();
   const sessionId = serchParams.get("sessionId");
   const navigate = useNavigate();
 
