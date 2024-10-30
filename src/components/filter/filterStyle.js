@@ -14,33 +14,8 @@ export const Wrapper = styled.div`
     display:flex;
     background-color:white;
     flex-direction: column;
-`;
-
-export const PageContainer = styled.div`
-    padding: 0 15vw;
-`;
-
-export const MainContainer = styled.div`
-    width:100%;
-    display:flex;
-    flex-direction: column;
     align-items: center;
 `;
-
-
-export const BannerStyle = css`
-    object-fit: contain;
-    width: 100%;
-    margin-top: 4vh;
-`;
-
-export const Banner = styled.img.attrs({
-    src: banner,
-    alt: "banner",
-  })`
-    ${BannerStyle}
-`;
-
 
 export const FilterStyle = css`
     object-fit: contain;
@@ -88,8 +63,6 @@ export const Filter6 = styled.img.attrs({
   })`
     ${FilterStyle}
 `;
-
-
 
 export const FilterImgContainer = styled.div`
     display: flex;
