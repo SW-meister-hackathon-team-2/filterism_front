@@ -21,7 +21,7 @@ const Header = () => {
       <M.Logo onClick={() => navigate("/")}></M.Logo>
       <M.SearchInput type="text" placeholder="안재억과 LOVE 챌린지" />
 
-
+      {isLoggedIn ? (
         <M.ProfileContainer>
           <M.MemberProfile
             src={Filter3}
@@ -30,7 +30,11 @@ const Header = () => {
           />
           <M.ProfileName onClick={() => navigate("/profile")}>주호님</M.ProfileName>
         </M.ProfileContainer>
-      
+      ) : (
+        <M.MemberName to="/login" style={{ cursor: "pointer" }}>
+          3초 SNS 로그인
+        </M.MemberName>
+      )}
     </M.Wrapper>
   );
 };
