@@ -2,7 +2,7 @@ import React from "react";
 import * as M from "./MainStyle";
 import Header from "../common/Header/Header";
 import { useNavigate } from "react-router-dom";
-import * as gvar from "../../GlobalVariables/global_variables"
+
 
 const Main = () => {
   const navigate = useNavigate();
