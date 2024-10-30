@@ -22,6 +22,12 @@ const Main = () => {
             <M.Filter5 number={5} onClick={() => navigate("/filter", { state: { number: 5 } })} />
             <M.Filter6 number={6} onClick={() => navigate("/filter", { state: { number: 6 } })} />
           </M.FilterImgContainer>
+          <M.FilterContainer>배경사진 둘러보기</M.FilterContainer>
+          <M.BackGroundContainer>
+            <M.BackGround1 number={1} onClick={() => navigate("/background", { state: { number: 1 } })} />
+            <M.BackGround2 number={2} onClick={() => navigate("/background", { state: { number: 2 } })} />
+            <M.BackGround3 number={3} onClick={() => navigate("/background", { state: { number: 3 } })} />
+          </M.BackGroundContainer>
         </M.PageContainer>
       </M.MainContainer>
     </M.Wrapper>

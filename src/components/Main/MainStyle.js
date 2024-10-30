@@ -8,6 +8,10 @@ import filter4 from "../../asset/img/filters/filter4.png";
 import filter5 from "../../asset/img/filters/filter5.png";
 import filter6 from "../../asset/img/filters/filter6.png";
 
+import background1 from "../../asset/img/background/background1.png";
+import background2 from "../../asset/img/background/background2.png";
+import background3 from "../../asset/img/background/background3.png";
+
 export const Wrapper = styled.div`
     width:100%;
     height:100vh;
@@ -90,6 +94,13 @@ export const Filter6 = styled.img.attrs({
 `;
 
 
+export const BackGroundContainer = styled.div`
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    margin-bottom: 3vw;
+    align-items: center;
+`;
 
 export const FilterImgContainer = styled.div`
     display: flex;
@@ -103,4 +114,33 @@ export const FilterContainer = styled.div`
     font-size: 25px;
     margin-top: 5vh;
     font-weight: 600;
+`;
+
+
+export const BackGroundStyle = css`
+    object-fit: contain;
+    width: 23vw;
+    margin-top: 4vh;
+`;
+
+export const BackGround1 = styled.img.attrs({
+    src: background1,
+    alt: "BackGround",
+  })`
+    ${BackGroundStyle}
+`;
+
+
+export const BackGround2 = styled.img.attrs({
+    src: background2,
+    alt: "BackGround",
+  })`
+    ${BackGroundStyle}
+`;
+
+export const BackGround3 = styled.img.attrs({
+    src: background3,
+    alt: "BackGround",
+  })`
+    ${BackGroundStyle}
 `;

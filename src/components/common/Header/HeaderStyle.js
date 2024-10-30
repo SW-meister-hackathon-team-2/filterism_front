@@ -38,6 +38,19 @@ export const Logo = styled.img.attrs({
     ${LogoStyle}
 `;
 
+
+export const ProfileName =  styled(NavLink)`
+  font-size: 15px;
+  font-weight: 600;
+  color: #878787;
+  text-decoration: none;
+  height: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3vw;
+`;
+
 export const MemberName =  styled(NavLink)`
   font-size: 15px;
   font-weight: 600;
