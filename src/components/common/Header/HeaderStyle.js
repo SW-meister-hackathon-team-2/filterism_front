@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     height:10vh;
     display:flex;
 
-    margin-top: 1.5vw;
+    margin-top: 1vw;
 
     align-items: center;
     justify-content: space-between;
