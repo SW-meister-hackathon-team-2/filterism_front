@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 import logo from "../../../asset/img/logo.png";
 import searchBar from "../../../asset/img/Search.png";
+import makeLogo from "../../../asset/img/makebutton.png"
 
 export const Wrapper = styled.div`
     width:85%;
@@ -33,6 +34,19 @@ export const LogoStyle = css`
 
 export const Logo = styled.img.attrs({
     src: logo,
+    alt: "logo",
+  })`
+    ${LogoStyle}
+`;
+
+
+export const MakeLogoStyle = css`
+    object-fit: contain;
+    width: 10vw;
+`;
+
+export const MakeLogo = styled.img.attrs({
+    src: makeLogo,
     alt: "logo",
   })`
     ${LogoStyle}

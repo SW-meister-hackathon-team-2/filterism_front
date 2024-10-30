@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import Filter3 from "../../../asset/img/filters/filter3.png";
 
-
 const Header = () => {
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,13 +27,16 @@ const Header = () => {
             alt="profile"
             onClick={() => navigate("/profile")}
           />
-          <M.ProfileName onClick={() => navigate("/profile")}>주호님</M.ProfileName>
+          <M.ProfileName onClick={() => navigate("/profile")}>
+            주호님
+          </M.ProfileName>
         </M.ProfileContainer>
       ) : (
         <M.MemberName to="/login" style={{ cursor: "pointer" }}>
           3초 SNS 로그인
         </M.MemberName>
       )}
+      <M.MakeLogo onClick={() => navigate("/type")}></M.MakeLogo>
     </M.Wrapper>
   );
 };
