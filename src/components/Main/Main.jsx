@@ -2,9 +2,11 @@ import React from "react";
 import * as M from "./MainStyle";
 import Header from "../common/Header/Header";
 import { useNavigate } from "react-router-dom";
+import * as gvar from "../../GlobalVariables/global_variables"
 
 const Main = () => {
   const navigate = useNavigate();
+
   return (
     <M.Wrapper>
       <Header />
@@ -13,6 +15,7 @@ const Main = () => {
           <M.Banner></M.Banner>
           
           <M.FilterContainer>필터 둘러보기</M.FilterContainer>
+          <M.Filter1 number={1} onClick={() => fetch(`${gvar.SERVER_URL}/api/user`).then(r => r.json()).then(g =>  console.log(g))} />
           <M.FilterImgContainer>
             <M.Filter1 number={1} onClick={() => navigate("/filter", { state: { number: 1 } })} />
             <M.Filter2 number={2} onClick={() => navigate("/filter", { state: { number: 2 } })} />

@@ -34,6 +34,14 @@ export const MemberName =  styled(NavLink)`
   text-decoration: none;
 `;
 
+export const MemberProfile = styled.img`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* 원형으로 만듦 */
+  cursor: pointer;
+  object-fit: cover; /* 이미지 크기에 맞게 조정 */
+`;
+
 
 export const SearchInput = styled.input`
   width: 30vw;
