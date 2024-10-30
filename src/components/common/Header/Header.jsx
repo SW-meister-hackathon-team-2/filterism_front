@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import * as M from "./HeaderStyle";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import Filter3 from "../../../asset/img/filters/filter3.png";
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -20,17 +22,17 @@ const Header = () => {
       <M.SearchInput type="text" placeholder="안재억과 LOVE 챌린지" />
 
       {isLoggedIn ? (
-        <>
+        <M.ProfileContainer>
           <M.MemberProfile
-            src="/path/to/profile-image.jpg"
+            src={Filter3}
             alt="profile"
             onClick={() => navigate("/profile")}
           />
-          <M.MemberName onClick={() => navigate("/profile")}>사용자 이름</M.MemberName>
-        </>
+          <M.MemberName onClick={() => navigate("/profile")}>주호님</M.MemberName>
+        </M.ProfileContainer>
       ) : (
         <M.MemberName to="/login" style={{ cursor: "pointer" }}>
-          3초 로그인
+          3초 SNS 로그인
         </M.MemberName>
       )}
     </M.Wrapper>

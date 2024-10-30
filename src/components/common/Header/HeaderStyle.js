@@ -13,7 +13,18 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 6vw;
+    align-items: center;
 `;
+
+
+
+export const ProfileContainer = styled.div`
+    display: flex;
+    margin-left: 8px;
+    justify-content: center;
+    gap: 1vw;
+`;
+
 
 export const LogoStyle = css`
     object-fit: contain;
@@ -28,10 +39,14 @@ export const Logo = styled.img.attrs({
 `;
 
 export const MemberName =  styled(NavLink)`
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: #878787;
   text-decoration: none;
+  height: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const MemberProfile = styled.img`
