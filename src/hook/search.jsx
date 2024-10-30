@@ -20,7 +20,7 @@ const useFetchTemplate = (templateId) => {
         setError(err);
       } finally {
         setLoading(false);
-      }
+      } 
     };
 
     fetchTemplate();
